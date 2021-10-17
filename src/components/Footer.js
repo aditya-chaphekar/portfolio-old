@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import FooterCol from './FooterCol';
-import PText from './PText';
+// import PText from './PText';
 
 const FooterStyle = styled.div`
   background-color: var(--deep-dark);
