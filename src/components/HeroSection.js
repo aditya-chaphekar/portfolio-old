@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/hero.webp';
+import { IKImage, IKContext } from 'imagekitio-react';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
@@ -167,7 +167,14 @@ export default function HeroSection() {
             <span className="hero__name">Aditya Chaphekar</span>
           </h1>
           <div className="hero__img">
-            <img src={HeroImg} alt="" />
+            <IKContext urlEndpoint="https://ik.imagekit.io/adityaportfolio">
+              <IKImage
+                path="/hero_dTjq8H06VFP.webp"
+                loading="lazy"
+                width="900"
+                lqip={{ active: true }}
+              />
+            </IKContext>
           </div>
           <div className="hero__info">
             <PText>

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { IKContext, IKImage } from 'imagekitio-react';
 import PText from '../components/PText';
 import Button from '../components/Button';
-import AboutImg from '../assets/images/dp1.webp';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 
@@ -106,7 +106,13 @@ export default function About() {
               <Button btnText="Download CV" btnLink="#" />
             </div>
             <div className="right">
-              <img src={AboutImg} alt="me" />
+              <IKContext urlEndpoint="https://ik.imagekit.io/adityaportfolio">
+                <IKImage
+                  path="/dp1_768zoSY1e.webp"
+                  loading="lazy"
+                  lqip={{ active: true }}
+                />
+              </IKContext>
             </div>
           </div>
           <div className="about__info__items">

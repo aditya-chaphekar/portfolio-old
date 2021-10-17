@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { IKContext, IKImage } from 'imagekitio-react';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/hero1.webp';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -90,7 +90,13 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="aboutSection__right">
-          <img className="aboutImg" src={AboutImg} alt="Img" />
+          <IKContext urlEndpoint="https://ik.imagekit.io/adityaportfolio">
+            <IKImage
+              path="/hero1_wHOVLEWcV.webp"
+              loading="lazy"
+              lqip={{ active: true }}
+            />
+          </IKContext>
         </div>
       </div>
     </AboutSectionStyles>
