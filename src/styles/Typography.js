@@ -8,16 +8,19 @@ const Typography = createGlobalStyle`
     font-family: 'RobotoMono Regular';
     src: url(${RobotoMonoRegular});
     font-style: normal;
+    font-display: swap
   }
   @font-face {
     font-family: 'Montserrat SemiBold';
     src: url(${MontserratSemiBold});
     font-style: normal;
+    font-display: swap
   }
   @font-face {
     font-family: 'Montserrat Bold';
     src: url(${MontserratBold});
     font-style: normal;
+    font-display: swap
   }
   html{
     font-family: 'RobotoMono Regular';
