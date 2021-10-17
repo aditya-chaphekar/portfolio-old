@@ -5,7 +5,7 @@ const testimonials = [
     title: 'CEO',
     org: 'WEB CIFAR',
     desc:
-      'Ayan is a person of commitment. He is really good at what he is doing. I really like his work. Especially the unique point of view of designing.',
+      'Aditya is a person of commitment. He is really good at what he is doing. I really like his work. Especially the unique point of view of approaching stuff.',
   },
   {
     id: 2,

@@ -8,10 +8,10 @@ const FooterStyle = styled.div`
   padding-top: 10rem;
   .container {
     display: flex;
-    gap: 3rem;
+    gap: 5rem;
   }
   .footer__col1 {
-    flex: 2;
+    flex: 1;
   }
   .footer__col2,
   .footer__col3,
@@ -57,14 +57,6 @@ export default function Footer() {
     <FooterStyle>
       <div className="container">
         <div className="footer__col1">
-          <h1 className="footer__col1__title">Ayan Khan</h1>
-          <PText>
-            A freelance web designer and developer from Chittagong, Bangladesh.
-            I always make websites that have unique designs and also has a good
-            performance rate.
-          </PText>
-        </div>
-        <div className="footer__col2">
           <FooterCol
             heading="Important Links"
             links={[
@@ -80,64 +72,49 @@ export default function Footer() {
               },
               {
                 type: 'Link',
-                title: 'Projects',
-                path: '/projects',
-              },
-              {
-                type: 'Link',
                 title: 'Contact',
                 path: '/contact',
               },
             ]}
           />
         </div>
-        <div className="footer__col3">
+        <div className="footer__col2">
           <FooterCol
             heading="Contact Info"
             links={[
               {
-                title: '+88012312',
-                path: 'tel:+88012312',
+                title: '+917972694085',
+                path: 'tel:+917972694085',
               },
               {
-                title: 'webcifar@gmail.com',
-                path: 'mailto:webcifar@gmail.com',
+                title: 'adityachaphekar@outlook.com',
+                path: 'mailto:adityachaphekar@outlook.com',
               },
               {
-                title: 'GEC Circle, Chittagong, Bangladesh',
-                path: 'http://google.com/maps',
+                title: 'Nashik, Maharashtra, India',
+                path: 'https://goo.gl/maps/nzdfFvTR35tEHJek8',
               },
             ]}
           />
         </div>
-        <div className="footer__col4">
+        <div className="footer__col3">
           <FooterCol
             heading="social Links"
             links={[
               {
-                title: 'Facebook',
-                path: 'http://facebook.com',
+                title: 'Github',
+                path: 'https://github.com/aditya-chaphekar',
               },
               {
-                title: 'Twitter',
-                path: 'http://twitter.com',
+                title: 'LinkedIn',
+                path: 'https://www.linkedin.com/in/aditya-chaphekar-080407a6/',
               },
               {
                 title: 'Instagram',
-                path: 'http://instagram.com',
+                path: 'http://isntagram.com/_aditya_chaphekar_',
               },
             ]}
           />
-        </div>
-      </div>
-      <div className="copyright">
-        <div className="container">
-          <PText>
-            © 2021 - Ayan Khan | Designed By{' '}
-            <a target="_blank" rel="noreferrer" href="http://webcifar.com">
-              web cifar
-            </a>{' '}
-          </PText>
         </div>
       </div>
     </FooterStyle>

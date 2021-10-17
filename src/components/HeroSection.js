@@ -40,6 +40,11 @@ const HeroStyles = styled.div`
   }
   .hero__info {
     margin-top: -18rem;
+    div {
+      p {
+        color: var(--white) !important;
+      }
+    }
   }
   .hero__social,
   .hero__scrollDown {
@@ -111,6 +116,11 @@ const HeroStyles = styled.div`
     }
     .hero__info {
       margin-top: 3rem;
+      div {
+        p {
+          color: var(--white) !important;
+        }
+      }
     }
     .hero__social {
       left: 0px;
@@ -154,18 +164,18 @@ export default function HeroSection() {
         <div className="container">
           <h1 className="hero__heading">
             <span>Hello, This is</span>
-            <span className="hero__name">Ayan Khan</span>
+            <span className="hero__name">Aditya Chaphekar</span>
           </h1>
           <div className="hero__img">
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero__info">
             <PText>
-              I am working as a freelance web designer and developer for 4
-              years. I love to design and make new web experiences for the
+              I am a full stack web developer with 4 years of Experience in the
+              Industry. I love to code and make new web experiences for the
               people.
             </PText>
-            <Button btnText="see my works" btnLink="/projects" />
+            <Button btnText="Contact Me" btnLink="/contact" />
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">
@@ -176,38 +186,38 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="http://facebook.com/webcifar"
+                    href="https://github.com/aditya-chaphekar"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    FB
+                    <i className="fab fa-github fa-rotate-90" />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="http://twitter.com/webcifar"
+                    href="https://twitter.com/adi_chaphekar"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    TW
+                    <i className="fab fa-twitter fa-rotate-90" />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="http://isntagram.com/web_cifar"
+                    href="http://isntagram.com/_aditya_chaphekar_"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    IG
+                    <i className="fab fa-instagram fa-rotate-90" />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="http://webcifar.com"
+                    href="https://www.linkedin.com/in/aditya-chaphekar-080407a6/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    LI
+                    <i className="fab fa-linkedin fa-rotate-90" />
                   </a>
                 </li>
               </ul>
