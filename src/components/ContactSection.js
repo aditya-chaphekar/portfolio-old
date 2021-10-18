@@ -1,12 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdEmail, MdLocalPhone } from 'react-icons/md';
 import ContactForm from './ContactForm';
 import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from './SectionTitle';
 
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
+  .test {
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+  }
+  .test:hover {
+    animation: beat 1s infinite ease;
+  }
   .contactSection__wrapper {
     display: flex;
     gap: 5rem;
@@ -49,6 +56,11 @@ const ContactSectionStyle = styled.div`
       padding: 4rem 2rem 2rem 2rem;
     }
   }
+  @keyframes beat {
+    to {
+      transform: scale(1.2);
+    }
+  }
 `;
 
 export default function ContactSection() {
@@ -58,12 +70,34 @@ export default function ContactSection() {
         <SectionTitle heading="contact" subheading="get in touch" />
         <div className="contactSection__wrapper">
           <div className="left">
-            <ContactInfoItem icon={<MdLocalPhone />} text="+917972694085" />
             <ContactInfoItem
-              icon={<MdEmail />}
+              icon={<i className="fas fa-phone fa-2x test" />}
+              text="+917972694085"
+            />
+            <ContactInfoItem
+              icon={
+                <lord-icon
+                  src="https://cdn.lordicon.com/rhvddzym.json"
+                  trigger="morph-two-way"
+                  stroke="75"
+                  colors="primary:#BCB4B4,secondary:#08a88a"
+                  style={{ width: '40px', height: '40px' }}
+                />
+              }
               text="adityachaphekar@outlook.com"
             />
-            <ContactInfoItem text="Nashik, India" />
+            <ContactInfoItem
+              icon={
+                <lord-icon
+                  src="https://cdn.lordicon.com/zzcjjxew.json"
+                  trigger="morph-two-way"
+                  colors="primary:#BCB4B4,secondary:#BCB4B4"
+                  stroke="75"
+                  style={{ width: '40px', height: '40px' }}
+                />
+              }
+              text="Nashik, India"
+            />
           </div>
           <div className="right">
             <ContactForm />

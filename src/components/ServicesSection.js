@@ -1,5 +1,4 @@
 import React from 'react';
-import { MdDesktopMac, MdCode, MdPhonelinkSetup } from 'react-icons/md';
 import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
@@ -30,17 +29,41 @@ export default function ServicesSection() {
         <SectionTitle subheading="What i will do for you" heading="Services" />
         <div className="services__allItems">
           <ServicesSectionItem
-            icon={<MdDesktopMac />}
+            icon={
+              <lord-icon
+                src="https://cdn.lordicon.com/qhgmphtg.json"
+                trigger="morph-two-way"
+                stroke="75"
+                colors="primary:#BCB4B4,secondary:#BCB4B4"
+                style={{ width: '40px', height: '40px' }}
+              />
+            }
             title="web design"
             desc="I do ui/ux design for the website that helps website to get a unique look."
           />
           <ServicesSectionItem
-            icon={<MdCode />}
+            icon={
+              <lord-icon
+                src="https://cdn.lordicon.com/dtgezzsi.json"
+                trigger="morph-two-way"
+                stroke="75"
+                colors="primary:#BCB4B4,secondary:#ffffff"
+                style={{ width: '40px', height: '40px' }}
+              />
+            }
             title="web dev"
             desc="I also develop the websites. I create high performance website with blazing fast speed."
           />
           <ServicesSectionItem
-            icon={<MdPhonelinkSetup />}
+            icon={
+              <lord-icon
+                src="https://cdn.lordicon.com/jqeuwnmb.json"
+                trigger="morph-two-way"
+                stroke="75"
+                colors="primary:#BCB4B4,secondary:#ffffff"
+                style={{ width: '40px', height: '40px' }}
+              />
+            }
             title="app Dev"
             desc="I develop mobile application. I create mobile app with eye catching ui. "
           />
