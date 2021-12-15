@@ -40,7 +40,7 @@ yarn start
 --- OR ---
 npm start
 ```
-
-
-
 [preview]: https://aditya-chaphekar.netlify.app/
+
+
+
